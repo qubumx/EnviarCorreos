@@ -46,7 +46,6 @@ namespace EnviarCorreos.Controllers
                             client.Authenticate(ConfigurationManager.AppSettings["FromEmail"].ToString(), ConfigurationManager.AppSettings["FromEmailPsw"].ToString());
                             client.Send(mail);
                             client.Disconnect(false);
-
                         }
                     }
                     catch (Exception ex)
@@ -67,7 +66,7 @@ namespace EnviarCorreos.Controllers
             bool response = false;
             try
             {
-                var amil = new System.Net.Mail.MailAddress(eMail);
+                var valorEMail = new System.Net.Mail.MailAddress(eMail);
                 response = true;
             }
             catch (Exception)
