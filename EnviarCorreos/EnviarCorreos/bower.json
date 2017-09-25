@@ -1,0 +1,24 @@
+{
+  "name": "ProjectsYottaHack",
+  "homepage": "https://yottahack.net/",
+  "authors": [
+    "CarlosQuiroz <cquirozb@ultrasist.com.mx>"
+  ],
+  "description": "Projects YottaHack",
+  "main": "index",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "moment": "momentjs#^2.18.1"
+  }
+}

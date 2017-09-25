@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  enviarcorreos:
+    image: enviarcorreos:dev
+    build:
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
+    volumes:
+      - .\EnviarCorreos:C:\inetpub\wwwroot
+      - ~\msvsmon:C:\msvsmon:ro
+    labels:
+      - "com.microsoft.visualstudio.targetoperatingsystem=windows"

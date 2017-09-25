@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  enviarcorreos:
+    image: enviarcorreos
+    build:
+      context: .\EnviarCorreos
+      dockerfile: Dockerfile
